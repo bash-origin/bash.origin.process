@@ -3,7 +3,7 @@
 
 function EXPORTS_run {
     if [ ! -e "$__DIRNAME__/node_modules" ]; then
-        pushd "$__DIRNAME__/node_modules" > /dev/null
+        pushd "$__DIRNAME__" > /dev/null
             BO_run_npm install
         popd > /dev/null
     fi
