@@ -1,13 +1,13 @@
 {
-  "name": "bash.origin.process",
-  "version": "0.1.1",
-  "dependencies": {
-    "bash.origin.test": "^0.1.23",
-    "bluebird": "^3.5.0",
-    "colors": "^1.1.2",
-    "request": "^2.81.0"
-  },
-  "scripts": {
-    "test": "bash.origin.test examples"
-  }
+    "name": "bash.origin.process",
+    "version": "0.1.2",
+    "dependencies": {
+        "bash.origin.test": "^0.1.23",
+        "bluebird": "^3.5.0",
+        "colors": "^1.1.2",
+        "request": "^2.81.0"
+    },
+    "scripts": {
+        "test": "bash.origin.test examples"
+    }
 }
