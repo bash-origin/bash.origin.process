@@ -6,7 +6,6 @@ depend {
 }
 echo "<<<TEST_MATCH_IGNORE"
 
-echo "TEST_MATCH_IGNORE>>>"
 CALL_process run "ProcessSet1" {
     "php": {
         "cwd": "$__DIRNAME__",
@@ -39,6 +38,5 @@ CALL_process run "ProcessSet1" {
         }
     }
 }
-echo "<<<TEST_MATCH_IGNORE"
 
 echo "OK"
