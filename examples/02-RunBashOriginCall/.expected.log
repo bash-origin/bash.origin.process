@@ -1,0 +1,12 @@
+Hello there!
+Run program 'run-impl': 
+[1:run-impl] BASH RUNNING IN PROCESS!
+[1:run-impl] Hello there!
+[1:run-impl] [node] Server running at http://127.0.0.1:3000/
+Waiting until program 'run-impl' is alive by checking route 'http://127.0.0.1:3000/?rid=test' against '"rid:test"'.
+Program 'run-impl' is alive!
+Enter '<ProgramNumber> + [Return]' to restart program or 'commands' (list commands) or 'q' (quit):
+  (No programs registered)
+[1:run-impl] rid:test
+Quitting.
+OK
