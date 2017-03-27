@@ -1,5 +1,5 @@
-Run program 'php': php -S 127.0.0.1:3000 -file server.php
-Run program 'nodejs': node server.js
+Run program 'php': 
+Run program 'nodejs': 
 [2:nodejs] [node] Server running at http://127.0.0.1:3001/
 Waiting until program 'php' is alive by checking route 'http://127.0.0.1:3000/?rid=test-php' against '"[php] rid:test-php"'.
 Program 'php' is alive!
