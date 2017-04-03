@@ -1,6 +1,6 @@
 {
     "name": "bash.origin.process",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "dependencies": {
         "bash.origin.modules": "^0.1.15",
         "bash.origin.test": "^0.1.26",
