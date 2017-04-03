@@ -19,8 +19,6 @@ CALL_process run "ProcessSet1" {
         "run": (bash () >>>
             #!/usr/bin/env bash.origin.script
 
-            echo "BASH RUNNING IN PROCESS!"
-
             depend {
                 "impl": "@./impl#s1"
             }
