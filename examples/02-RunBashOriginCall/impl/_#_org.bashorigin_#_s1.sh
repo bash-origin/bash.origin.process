@@ -5,5 +5,5 @@ function EXPORTS_hello {
 }
 
 function EXPORTS_runServer {
-    BO_run_node "$__DIRNAME__/server.js"
+    BO_run_node "$__DIRNAME__/server.js" "$1"
 }

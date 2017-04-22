@@ -25,7 +25,16 @@ CALL_process run "ProcessSet1" {
 
             CALL_impl hello
 
-            CALL_impl runServer
+            CALL_impl runServer {
+                "responder": function /* CodeBlock */ () {
+                    return function (req, res) {
+                        res.statusCode = 200;
+                        var msg = "rid:" + req.url.replace("/?rid=", "");
+                        res.end(msg);
+                        console.log(msg);
+                    };
+                }
+            }
 
         <<<),
         "routes": {
