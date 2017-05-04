@@ -2,10 +2,10 @@
     "name": "bash.origin.process",
     "version": "0.1.4",
     "dependencies": {
-        "bash.origin.modules": "^0.1.15",
-        "bash.origin.test": "^0.1.26",
+        "bash.origin.modules": "^0.1.17",
+        "bash.origin.test": "^0.1.28",
         "bluebird": "^3.5.0",
-        "codeblock": "^0.2.9",
+        "codeblock": "^0.3.1",
         "colors": "^1.1.2",
         "request": "^2.81.0"
     },
