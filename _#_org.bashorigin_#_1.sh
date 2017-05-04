@@ -8,7 +8,7 @@ fi
 
 
 function EXPORTS_run {
-    BO_run_node --eval '
+    BO_run_recent_node --eval '
         const PROCESS = require("$__DIRNAME__/lib/process");
         PROCESS.run(process.argv[1], JSON.parse(process.argv[2])).catch(console.error);
     ' "$1" "$2"
