@@ -2,7 +2,7 @@
 
 echo "TEST_MATCH_IGNORE>>>"
 depend {
-    "process": "@com.github/bash-origin/bash.origin.process#1"
+    "process": "@com.github/bash-origin/bash.origin.process#s1"
 }
 echo "<<<TEST_MATCH_IGNORE"
 
