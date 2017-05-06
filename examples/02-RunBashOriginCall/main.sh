@@ -2,7 +2,7 @@
 
 echo "TEST_MATCH_IGNORE>>>"
 depend {
-    "process": "@../..#1",
+    "process": "@../..#s1",
     "impl": "@./impl#s1"
 }
 echo "<<<TEST_MATCH_IGNORE"
