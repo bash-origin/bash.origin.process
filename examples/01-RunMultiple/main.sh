@@ -20,9 +20,6 @@ CALL_process run "ProcessSet1" {
         }
     },
     "nodejs": {
-        "depends": [
-            "php"
-        ],
         "cwd": "$__DIRNAME__",
         "env": {
             "PORT": 3001

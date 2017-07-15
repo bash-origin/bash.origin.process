@@ -1,12 +1,12 @@
-Run program 'php': 
-Run program 'nodejs': 
+[bash.origin.process] Run program 'php': 
+[bash.origin.process] Run program 'nodejs': 
 [2:nodejs] [node] Server running at http://127.0.0.1:3001/
-Waiting until program 'php' is alive by checking route 'http://127.0.0.1:3000/?rid=test-php' against '"[php] rid:test-php"'.
-Program 'php' is alive!
-Waiting until program 'nodejs' is alive by checking route 'http://127.0.0.1:3001/?rid=test-nodejs' against '"[node] rid:test-nodejs"'.
-Program 'nodejs' is alive!
-Enter '<ProgramNumber> + [Return]' to restart program or 'commands' (list commands) or 'q' (quit):
-  (No programs registered)
+[bash.origin.process] Waiting until program 'php' is alive by checking route 'http://127.0.0.1:3000/?rid=test-php' against '"[php] rid:test-php"'.
+[bash.origin.process] Program 'php' is alive!
+[bash.origin.process] Waiting until program 'nodejs' is alive by checking route 'http://127.0.0.1:3001/?rid=test-nodejs' against '"/^\\[node\\] rid:test-nodejs/"'.
+[bash.origin.process] Program 'nodejs' is alive!
+[bash.origin.process] Enter '<ProgramNumber> + [Return]' to restart program or 'commands' (list commands) or 'q' (quit):
+[bash.origin.process] (No programs registered)
 [2:nodejs] [node] rid:test-nodejs
-Quitting.
+[bash.origin.process] Quitting.
 OK
