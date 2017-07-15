@@ -1,19 +1,19 @@
-Run program 'process3': 
+[bash.origin.process] Run program 'process3': 
 [1:process3] [node] Server running at http://127.0.0.1:3003/
-Waiting until program 'process3' is alive by checking route 'http://127.0.0.1:3003/?rid=test-p3' against '"[node] rid:test-p3"'.
-Program 'process3' is alive!
-Run program 'process1': 
+[bash.origin.process] Waiting until program 'process3' is alive by checking route 'http://127.0.0.1:3003/?rid=test-p3' against '"[node] rid:test-p3"'.
+[bash.origin.process] Program 'process3' is alive!
+[bash.origin.process] Run program 'process1': 
 [1:process3] [node] rid:test-p3
 [1:process1] [node] Server running at http://127.0.0.1:3001/
-Waiting until program 'process1' is alive by checking route 'http://127.0.0.1:3001/?rid=test-p1' against '"[node] rid:test-p1"'.
-Program 'process1' is alive!
-Run program 'process2': 
+[bash.origin.process] Waiting until program 'process1' is alive by checking route 'http://127.0.0.1:3001/?rid=test-p1' against '"[node] rid:test-p1"'.
+[bash.origin.process] Program 'process1' is alive!
+[bash.origin.process] Run program 'process2': 
 [1:process1] [node] rid:test-p1
 [1:process2] [node] Server running at http://127.0.0.1:3002/
-Waiting until program 'process2' is alive by checking route 'http://127.0.0.1:3002/?rid=test-p2' against '"[node] rid:test-p2"'.
-Program 'process2' is alive!
-Enter '<ProgramNumber> + [Return]' to restart program or 'commands' (list commands) or 'q' (quit):
-  (No programs registered)
+[bash.origin.process] Waiting until program 'process2' is alive by checking route 'http://127.0.0.1:3002/?rid=test-p2' against '"[node] rid:test-p2"'.
+[bash.origin.process] Program 'process2' is alive!
+[bash.origin.process] Enter '<ProgramNumber> + [Return]' to restart program or 'commands' (list commands) or 'q' (quit):
+[bash.origin.process] (No programs registered)
 [1:process2] [node] rid:test-p2
-Quitting.
+[bash.origin.process] Quitting.
 OK

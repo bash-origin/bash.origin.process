@@ -1,10 +1,8 @@
 #!/usr/bin/env bash.origin.script
 
-echo "TEST_MATCH_IGNORE>>>"
 depend {
     "process": "@com.github/bash-origin/bash.origin.process#s1"
 }
-echo "<<<TEST_MATCH_IGNORE"
 
 CALL_process run "ProcessSet1" {
     "process1": {
