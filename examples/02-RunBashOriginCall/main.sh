@@ -1,12 +1,9 @@
 #!/usr/bin/env bash.origin.script
 
-echo "TEST_MATCH_IGNORE>>>"
 depend {
     "process": "@../..#s1",
     "impl": "@./impl#s1"
 }
-echo "<<<TEST_MATCH_IGNORE"
-
 
 CALL_impl hello
 
