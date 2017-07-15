@@ -1,10 +1,8 @@
 #!/usr/bin/env bash.origin.script
 
-echo "TEST_MATCH_IGNORE>>>"
 depend {
     "process": "@com.github/bash-origin/bash.origin.process#s1"
 }
-echo "<<<TEST_MATCH_IGNORE"
 
 CALL_process run "ProcessSet1" {
     "php": {
@@ -22,6 +20,9 @@ CALL_process run "ProcessSet1" {
         }
     },
     "nodejs": {
+        "depends": [
+            "php"
+        ],
         "cwd": "$__DIRNAME__",
         "env": {
             "PORT": 3001
@@ -32,7 +33,7 @@ CALL_process run "ProcessSet1" {
         "routes": {
             "alive": {
                 "uri": "/?rid=test-nodejs",
-                "expect": "[node] rid:test-nodejs",
+                "expect": "/^\\[node\\] rid:test-nodejs/",
                 "exit": true
             }
         }
