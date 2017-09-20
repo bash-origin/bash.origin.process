@@ -7,6 +7,23 @@ if [ ! -e "$__DIRNAME__/node_modules" ]; then
 fi
 
 
+function EXPORTS_free_port {
+    BO_run_recent_node --eval '
+        const GET_PORT = require("$__DIRNAME__/node_modules/get-port");
+        GET_PORT().then(function (port) {
+            // NOTE: This does not work!
+            //process.stdout.write(port);
+
+            console.log(port);
+
+            process.exit(0);
+        }).catch(function (err) {
+            throw err;
+        });
+    '
+}
+
+
 function EXPORTS_run {
     BO_run_recent_node --eval '
         const PROCESS = require("$__DIRNAME__/lib/process");
