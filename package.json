@@ -2,7 +2,7 @@
   "name": "bash.origin.process",
   "version": "0.1.5",
   "dependencies": {
-    "bash.origin.workspace": "^0.2.2"
+    "bash.origin.workspace": "^0.2.5"
   },
   "scripts": {
     "test": "bash.origin.test examples"
