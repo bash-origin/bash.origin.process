@@ -5,7 +5,7 @@
         "publish": "npm"
     },
     "dependencies": {
-        "bash.origin.workspace": "^0.2.6"
+        "bash.origin.workspace": "^0.2.11"
     },
     "scripts": {
         "test": "bash.origin.test examples"
