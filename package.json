@@ -1,8 +1,11 @@
 {
   "name": "bash.origin.process",
   "version": "0.1.5",
+  "pm": {
+    "publish": "npm"
+  },
   "dependencies": {
-    "bash.origin.workspace": "^0.2.5"
+    "bash.origin.workspace": "^0.2.6"
   },
   "scripts": {
     "test": "bash.origin.test examples"

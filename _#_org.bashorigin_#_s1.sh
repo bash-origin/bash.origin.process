@@ -1,15 +1,9 @@
 #!/usr/bin/env bash.origin.script
 
-if [ ! -e "$__DIRNAME__/node_modules" ]; then
-    pushd "$__DIRNAME__" > /dev/null
-        BO_run_npm install
-    popd > /dev/null
-fi
-
 
 function EXPORTS_free_port {
     BO_run_recent_node --eval '
-        const GET_PORT = require("$__DIRNAME__/node_modules/get-port");
+        const GET_PORT = require("bash.origin.workspace").LIB.GET_PORT;
         GET_PORT().then(function (port) {
             // NOTE: This does not work!
             //process.stdout.write(port);
