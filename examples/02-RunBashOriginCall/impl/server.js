@@ -1,5 +1,5 @@
 
-const LIB = require("bash.origin.workspace").forPackage(__dirname + "/../../..").LIB;
+const LIB = require("bash.origin.lib").forPackage(__dirname + "/../../..").js;
 
 const hostname = "127.0.0.1";
 const port = process.env.PORT;
@@ -12,7 +12,7 @@ const responder = LIB.CODEBLOCK.run(config.responder, {}, {
     }
 });
 
-const server = LIB.HTTP.createServer(responder);
+const server = LIB.http.createServer(responder);
 
 server.listen(port, hostname, () => {
     console.log("[node] Server running at http://" + hostname + ":" + port + "/");

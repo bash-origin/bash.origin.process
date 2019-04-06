@@ -4,8 +4,8 @@
     "pm": {
         "publish": "npm"
     },
-    "dependencies": {
-        "bash.origin.workspace": "^0.2.15"
+    "__dependencies": {
+        "bash.origin.lib": "^0.2.15"
     },
     "scripts": {
         "test": "bash.origin.test examples"
