@@ -3,7 +3,7 @@
 
 function EXPORTS_free_port {
     BO_run_recent_node --eval '
-        const GET_PORT = require("bash.origin.lib").GET_PORT;
+        const GET_PORT = require("bash.origin.lib").js.GET_PORT;
         GET_PORT().then(function (port) {
             // NOTE: This does not work!
             //process.stdout.write(port);
