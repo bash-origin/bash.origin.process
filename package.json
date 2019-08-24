@@ -1,13 +1,13 @@
 {
-    "name": "bash.origin.process",
-    "version": "0.1.9",
-    "pm": {
-        "publish": "npm"
-    },
-    "__dependencies": {
-        "bash.origin.lib": "^0.2.15"
-    },
-    "scripts": {
-        "test": "bash.origin.test examples"
-    }
+  "name": "bash.origin.process",
+  "version": "0.2.0-pre.0",
+  "pm": {
+    "publish": "npm"
+  },
+  "scripts": {
+    "test": "bash.origin.test examples"
+  },
+  "dependencies": {
+    "bash.origin.lib": "^0.4.0-pre.0"
+  }
 }
