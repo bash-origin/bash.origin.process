@@ -1,0 +1,4 @@
+>>>TEST_IGNORE_LINE:\[bash.origin.process\]<<<
+[1m[1:nodejs] [22m[node] Server running at http://127.0.0.1:3001/
+[1m[1:nodejs] [22m[node] rid:test-nodejs
+OK

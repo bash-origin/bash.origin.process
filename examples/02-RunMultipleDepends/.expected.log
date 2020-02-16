@@ -1,0 +1,8 @@
+>>>TEST_IGNORE_LINE:\[bash.origin.process\]<<<
+[1m[1:process3] [22m[node] Server running at http://127.0.0.1:3003/
+[1m[1:process3] [22m[node] rid:test-p3
+[1m[1:process1] [22m[node] Server running at http://127.0.0.1:3001/
+[1m[1:process1] [22m[node] rid:test-p1
+[1m[1:process2] [22m[node] Server running at http://127.0.0.1:3002/
+[1m[1:process2] [22m[node] rid:test-p2
+OK

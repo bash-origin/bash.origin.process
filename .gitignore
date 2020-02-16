@@ -1,7 +1,4 @@
-/.installed*
-*~.compiled.bash
 /node_modules/
 /package-lock.json
 /examples/*/.actual.*
-
 .~*

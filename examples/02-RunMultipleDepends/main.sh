@@ -1,20 +1,21 @@
 #!/usr/bin/env bash.origin.script
 
+echo ">>>TEST_IGNORE_LINE:\\[bash.origin.process\\]<<<";
+
 depend {
-    "process": "@com.github/bash-origin/bash.origin.process#s1"
+    "runner": "bash.origin.process # runner/v0"
 }
 
-CALL_process run "ProcessSet1" {
+CALL_runner run {
     "process1": {
         "depends": [
             "process3"
         ],
-        "cwd": "$__DIRNAME__",
         "env": {
             "PORT": 3001
         },
         "commands": [
-            "node server.js"
+            "node ../01-RunSingle/server.js"
         ],
         "routes": {
             "alive": {
@@ -28,7 +29,7 @@ CALL_process run "ProcessSet1" {
         "depends": [
             "process1"
         ],
-        "cwd": "$__DIRNAME__",
+        "cwd": "../01-RunSingle",
         "env": {
             "PORT": 3002
         },
@@ -44,7 +45,7 @@ CALL_process run "ProcessSet1" {
         }
     },
     "process3": {
-        "cwd": "$__DIRNAME__",
+        "cwd": "${__DIRNAME__}/../01-RunSingle",
         "env": {
             "PORT": 3003
         },

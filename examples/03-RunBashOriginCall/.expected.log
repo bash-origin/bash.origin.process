@@ -1,0 +1,6 @@
+>>>TEST_IGNORE_LINE:\[bash.origin.process\]<<<
+Hello there!
+[1m[1:run-impl] [22mHello there!
+[1m[1:run-impl] [22m[node] Server running at http://127.0.0.1:3000/
+[1m[1:run-impl] [22mrid:test
+OK
