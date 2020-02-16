@@ -8,6 +8,6 @@
     "test": "bash.origin.test examples"
   },
   "dependencies": {
-    "bash.origin.lib": "^0.4.0-pre.11"
+    "bash.origin.lib": "^0.4.0-pre.12"
   }
 }
