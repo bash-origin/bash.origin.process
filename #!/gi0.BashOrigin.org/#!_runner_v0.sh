@@ -3,7 +3,7 @@
 function EXPORTS_run {
 
     doc={
-        "# +1": "gi0.PINF.it/core/v0",
+        "# +1": "gi0.PINF.it/core",
         "# +2": {
             "process": "${__DIRNAME__}/../gi0.PINF.it/#!inf.json"
         },
