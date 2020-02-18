@@ -1,0 +1,31 @@
+#!/usr/bin/env inf
+{
+    "#": "gi0.PINF.it/core/v0",
+
+    "#": {
+        "process": "bash.origin.process"
+    },
+
+    ":runner:": "process @ runner/v0",
+
+    "gi0.PINF.it/core/v0 @ # :runner: set() config": {
+        "nodejs": {
+            "cwd": "../01-RunSingle",
+            "env": {
+                "PORT": 3001
+            },
+            "commands": [
+                "node server.js"
+            ],
+            "routes": {
+                "alive": {
+                    "uri": "/?rid=test-nodejs",
+                    "expect": "/^\\[node\\] rid:test-nodejs/",
+                    "exit": true
+                }
+            }
+        }
+    },
+
+    "gi0.PINF.it/core/v0 @ # :runner: run()": ""
+}

@@ -1,14 +1,16 @@
 #!/usr/bin/env bash.origin.script
 
+echo ">>>TEST_IGNORE_LINE:\\[bash.origin.process\\]<<<";
+
 depend {
-    "process": "@../..#s1",
+    "runner": "bash.origin.process # runner/v0",
     "impl": "@./impl#s1"
 }
 
 CALL_impl hello
 
 
-CALL_process run "ProcessSet1" {
+CALL_runner run {
     "run-impl": {
         "env": {
             "PORT": "3000"

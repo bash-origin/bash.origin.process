@@ -1,0 +1,49 @@
+#!/usr/bin/env inf
+{
+    "#": "gi0.PINF.it/core/v0",
+
+    "#": {
+        "process": "bash.origin.process"
+    },
+
+    ":runner:": "process @ runner/v0",
+
+    "gi0.PINF.it/core/v0 @ # :runner: set() config": {
+        "nodejs": {
+            "env": {
+                "PORT": 3001
+            },
+            "run": (pinf.it () >>>
+                {                    
+                    "# run": (run.javascript.progress () >>>
+
+                        const LIB = require("bash.origin.lib").forPackage(__dirname).js;
+
+                        const hostname = "127.0.0.1";
+                        const port = process.env.PORT;
+
+                        const server = LIB.http.createServer(function (req, res) {
+                            res.statusCode = 200;
+                            var msg = "[node] rid:" + req.url.replace("/?rid=", "");
+                            res.end(msg);
+                            console.log(msg);
+                        });
+
+                        server.listen(port, hostname, () => {
+                            console.log("[node] Server running at http://" + hostname + ":" + port + "/");
+                        });
+                    <<<)
+                }
+            <<<),
+            "routes": {
+                "alive": {
+                    "uri": "/?rid=test-nodejs",
+                    "expect": "/^\\[node\\] rid:test-nodejs/",
+                    "exit": true
+                }
+            }
+        }
+    },
+
+    "gi0.PINF.it/core/v0 @ # :runner: run()": ""
+}
